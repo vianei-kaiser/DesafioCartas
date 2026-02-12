@@ -1,6 +1,6 @@
- // =========================
- // PROGRANA NIVEL NOVATO 
- // =========================
+ // ===================================
+ // PROGRANA PARA TESTAR VARIAVEIS EM C
+ // ===================================
   
 #include <stdio.h>
 
@@ -8,7 +8,7 @@
 int main() {
 
     // DECLARAÇÃO DAS VARIÁVEIS
-    
+
     // Carta 1 - Variaves definida com 1
     char estado1;
     char codigo1[4];
@@ -32,7 +32,8 @@ int main() {
        ENTRADA DE DADOS - CARTA 1
        ========================= */
 
-    printf("===== CADASTRO DA CARTA 1 =====\n");
+    printf("@@@@@@@@@@@@@@@  RESULTADO @@@@@@@@@@@@@@@@@@\n\n");
+    printf("===== CADASTRO DA CARTA 1 =====\n");   
 
     printf("Estado (A a H): ");
     scanf(" %c", &estado1);
@@ -87,8 +88,10 @@ int main() {
     /* =========================
        EXIBIÇÃO DOS DADOS
        ========================= */
+    printf("@@@@@@@@@@@@@@@  RESULTADO @@@@@@@@@@@@@@@@@@\n\n");
 
-    printf("\n\n===== CARTA 1 =====\n");
+    printf("\033[31m"); //coloca cor para diferenciar as cartas
+    printf("++++++++++++ CARTA 1 +++++++++++\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
@@ -96,9 +99,10 @@ int main() {
     printf("Area: %.2f km2\n", area1);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos1);
+    printf("\033[31m"); //reseta a função da cor
 
-
-    printf("\n===== CARTA 2 =====\n");
+    printf("\033[34m"); //coloca cor para diferenciar as cartas
+    printf("\n******** CARTA 2 ********\n");
     printf("Estado: %c\n", estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
@@ -106,6 +110,8 @@ int main() {
     printf("Area: %.2f km2\n", area2);
     printf("PIB: %.2f bilhoes de reais\n", pib2);
     printf("Numero de Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("\033[31m\n\n\n"); //reseta a função da cor
+
 
     return 0;
 }
