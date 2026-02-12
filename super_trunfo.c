@@ -85,9 +85,9 @@ int main() {
     scanf("%d", &pontosTuristicos2);
 
 
-    /* =========================
-       EXIBIÇÃO DOS DADOS
-       ========================= */
+    /* =============================
+       EXIBIÇÃO DOS DADOS DAS CARTAS
+       ============================= */
     printf("@@@@@@@@@@@@@@@  RESULTADO @@@@@@@@@@@@@@@@@@\n\n");
 
     printf("\033[31m"); //coloca cor para diferenciar as cartas
